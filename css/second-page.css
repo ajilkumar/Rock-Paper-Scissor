@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(301deg, rgba(193, 193, 193, 0.828) 0%, rgb(255, 255, 255) 100%);
+}
+.container{
+  width: 450px;
+  height: 750px;
+  -webkit-box-shadow: 1.3px 1.3px 20px 4px rgba(156,156,156,0.88);
+  -moz-box-shadow: 1.3px 1.3px 20px 4px rgba(156,156,156,0.88);
+  box-shadow: 1.3px 1.3px 20px 4px rgba(156,156,156,0.88);
+  background: linear-gradient(to bottom, rgba(181,225,238,1) 0%, rgba(67,208,230,1) 49%, rgba(190,229,239,1) 100%);
+}
+p{
+  
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 2rem;
+}
+p.heading{
+  font-family: 'Press Start 2P';
+}
+.players{
+  font-family: 'Roboto';
+  display: flex;
+  justify-content:space-between;
+  margin-top: 1.5rem;
+  margin-inline-start: 1rem;
+  margin-inline-end: 2rem;
+
+}
+.bot-image img{
+  width:50px;
+  height:auto;
+  margin-top: 12%;
+  margin-left: 45%;;
+  
+}
+
+.bot-choice img{
+  width: 50px;
+  margin-top: 2rem;
+  margin-left: 45%;
+  
+}
+.player-choice img{
+  width: 50px;
+  margin-top: 2rem;
+  margin-left: 45%;
+  
+}
+.your-choice img{
+  width: 50px;
+  margin: 0 20px;
+  margin-top: 3rem;
+  cursor: pointer;
+}
+img[alt="scissors"]{
+  width:35px;
+}
+.your-choice {
+  display: flex;
+  justify-content: center;
+}
+.choose{
+  font-family: 'roboto';
+}
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 10px;
+  color: white;
+  text-shadow: 2px 2px rgb(116, 116, 116);
+  text-transform: uppercase;
+  cursor: pointer;
+  border: solid 2px black;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 17px;
+  background-color: hsl(49deg 98% 60%);
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+button:active {
+  transform: scale(0.9);
+  transition: all 100ms ease;
+}
+
+button svg {
+  transition: all 0.5s ease;
+  z-index: 2;
+}
+
+.play {
+  transition: all 0.5s ease;
+  transition-delay: 300ms;
+}
+
+button:hover svg {
+  transform: scale(3) translate(50%);
+}
+
+.now {
+  position: absolute;
+  left: 0;
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+  z-index: 2;
+}
+
+button:hover .now {
+  transform: translateX(10px);
+  transition-delay: 300ms;
+}
+
+button:hover .play {
+  transform: translateX(200%);
+  transition-delay: 300ms;
+}
+.restart{
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
